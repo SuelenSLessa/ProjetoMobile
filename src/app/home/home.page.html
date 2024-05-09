@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Cadastro
+      Triangulo App
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -15,19 +15,16 @@
 
   <div id="container">
     <ion-item>
-      <ion-label position="floating">Informe um Nome </ion-label>
-      <ion-input></ion-input>
+      <ion-label position="floating">base</ion-label>
+      <ion-input type="number" aria-placeholder="Informe um valor para a base."></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">Informe um endereço</ion-label>
-      <ion-input></ion-input>
-      <ion-item>
-      <ion-label position="floating">Informe um telefone</ion-label>
-        <ion-input></ion-input>
+      <ion-label position="floating">Altura</ion-label>
+      <ion-input type="number" aria-placeholder="Informe um valor para a Altura."></ion-input>
       </ion-item>
+      <ion-button color="secondary"onclick="calcularArea()">Calcular</ion-button><br>
+    <ion-label>Respota</ion-label>       
       
-    </ion-item>
-    
   </div>
 
 </ion-content>

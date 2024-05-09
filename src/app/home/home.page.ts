@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() {
+
+  }
+  calcularArea(){
+    console.log("chamei o metodo");
+
+}
+
+
 
 }
