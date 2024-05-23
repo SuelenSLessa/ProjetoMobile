@@ -9,22 +9,22 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Cadastro</ion-title>
+      <ion-title size="large">Triangulo App</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
     <ion-item>
       <ion-label position="floating">base</ion-label>
-      <ion-input type="number" aria-placeholder="Informe um valor para a base."></ion-input>
+      <ion-input type="number" aria-placeholder="Informe um valor para a base." name="base" [(ngModel)]="base" ></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Altura</ion-label>
       <ion-input type="number" aria-placeholder="Informe um valor para a Altura."></ion-input>
       </ion-item>
-      <ion-button color="secondary"onclick="calcularArea()">Calcular</ion-button><br>
-    <ion-label>Respota</ion-label>       
-      
-  </div>
 
+      <ion-button color="secondary"(click)="calcularArea()">Calcular</ion-button><br>
+    <ion-label>Respota</ion-label>       
+    <ion-label color="'warning">{{resultado}}</ion-label>
+    </div>
 </ion-content>
